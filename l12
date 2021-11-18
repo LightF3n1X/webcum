@@ -1,0 +1,49 @@
+function readNumber(){
+    let znach;
+    do{
+        znach =prompt("Vvedite znachenie")
+    }while(znach != undefined && znach != '')
+    return znach;
+}
+
+
+
+function Random(min,max) {
+  alert( min + Math.random() * (max - min))
+
+}
+
+function sum(){
+    var a=prompt("Vvedite a",0);
+    var b=prompt("Vvedite b",0);
+    var sum = (+a)+(+b);
+    alert(sum);
+    return sum;
+}
+function corect_str(){
+    let s=prompt("Vvedite stroky");
+    if(s.length) 
+    {
+        s = s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
+    }
+    return s;
+    alert(s);
+}
+function calculator(a,b){
+    this.read=function(){
+        this.a=prompt("Vvedite znachenie",0);
+        this.b=prompt("Vvedite znachenie",0);
+    },
+    this.sum=function(){
+        let sum;
+        sum=this.a+this.b;
+        return sum;
+    },
+    this.mul=function(){
+        let mul;
+        mul=this.a*this.b;
+        return mul;
+    }
+}
+
+let constr = new calculator(0,0);
