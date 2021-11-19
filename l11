@@ -1,0 +1,44 @@
+# Завдання 1
+
+function readNumber(){
+    let x;
+    do{
+        x =prompt("Vvedite znachenie")
+    }while(x == null || x=='')
+    return x;
+}readNumber()
+
+# Завдання 2
+
+let min = prompt("Enter min:");
+let max = prompt("Enter max:");
+function Random(min,max) {
+  alert( (Math.random() * max) + min )
+
+}
+Random(min,max);
+
+# Завдання 3
+
+function sum(){
+    var a=prompt("Enter A: ",0);
+    var b=prompt("Enter B: ",0);
+    var sum = (+a)+(+b);
+    alert(sum);
+}
+sum();
+
+# Завдання 4
+
+function script ()
+{
+var  array=[ 
+" Спочатку JavaScript був створений, щоб зробити веб-сторінки живими ", 
+" Різні двигуни мають різні «кодові імена».",
+ " Коли JavaScript створювався, він мав інше ім'я – «LiveScript» ",
+ " Повна інтеграція з HTML/CSS "
+]
+for(let i = 0; i<4; i++){ if(array[i].indexOf('JavaScript')>0){console.log(array[i])}; }
+
+}
+script ()
